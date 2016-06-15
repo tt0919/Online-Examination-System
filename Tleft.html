@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<TITLE></TITLE>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<META http-equiv=X-UA-Compatible content=IE=EmulateIE7>
+
+<LINK href="css/update8.css" type=text/css rel=stylesheet>
+    <style type="text/css">
+        .style1
+        {
+            height: 300px;
+        }
+        .style3
+        {
+            height: 20px;
+        }
+        .style4
+        {
+            FONT-WEIGHT: bold;
+            FONT-SIZE: medium;
+            
+            color:Blue;
+            FONT-FAMILY: Arial;
+        }
+    </style>
+</HEAD>
+<BODY>
+
+    <table style="width: 17%; " align="center" background="picture/菜单背景.jpg">
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;
+            </td>
+            <td>
+                &nbsp;
+                <div class="pnav-cnt">
+                    <div id="letter-a" class="pnav-box">
+                        <div class="box-title">
+                            
+                            <span class="style4">题目信息管理</span><span class="cDGray"></span></div>
+                        <div class="style3">
+                        </div>
+                            <li><b>&nbsp;&nbsp;&nbsp;
+                                <a href="teacher/TExaminationInfo.aspx" target="menu">试题基本信息</a> </b><span class="cDGray">
+                                </span>
+                                
+                            </li>
+                                                    <div class="style3">
+                        </div>
+                            
+                            <li><b>&nbsp;&nbsp;&nbsp; <a href="teacher/Xuan.aspx" target="menu">添加试题信息</a>
+                                </b><span class="cDGray"></span>
+                               
+                            </li>
+                                                    <div class="style3">
+                        </div>
+                            
+                       
+                    </div>
+                   <div id="Div1" class="pnav-box">
+                        <div class="box-title">
+                            
+                            <span class="style4">练习结果管理</span><span class="cDGray"></span></div>
+                                                <div class="style3">
+                        </div>
+                            
+                            <li><b>&nbsp;&nbsp;&nbsp;
+                                <a href="teacher/TExaminationResult.aspx" target="menu">考试结果</a> </b><span class="cDGray">
+                                </span>
+                                
+                            </li>                        <div class="style3">
+                        </div>
+                            
+                           
+                       
+                    </div>
+
+                    <div id="Div2" class="pnav-box">
+                        <div class="box-title">
+                            
+                            <span class="style4">个人信息维护</span><span class="cDGray"></span></div>
+                                                <div class="style3">
+                        </div>
+                            
+                            <li><b>&nbsp;&nbsp;&nbsp;
+                                <a href="teacher/TeacherChangePwd.aspx" target="menu">修改密码</a> </b><span class="cDGray">
+                                </span>
+                                
+                            </li>                        <div class="style3">
+                        </div>
+                            
+                            <li><b>&nbsp;&nbsp;&nbsp; 
+                                <a href="admin/bookList.aspx" target="menu">留言簿</a>
+                                </b><span class="cDGray"></span>
+                               
+                            </li>                        <div class="style3">
+                        </div>
+                            
+                       
+                    </div>
+
+<SCRIPT src="js/update8.js" type=text/javascript></SCRIPT>
+
+<SCRIPT type=text/javascript>
+//<![CDATA[ 
+(function(){
+NTES("span.photo-search input[type=text]").addEvent("focus", function(){ this.value == this.defaultValue && (this.value = ""); }).addEvent("blur", function(){ this.value == "" && (this.value = this.defaultValue); });
+	NTES("div.pnav-box div.box-title a.btn-fold").addEvent("click", function(e){
+		e.preventDefault();
+		var eleTitle = NTES(this.parentNode);
+		NTES(this).addCss("hidden");
+		eleTitle.$("a.btn-unfold").removeCss("hidden");
+		NTES(eleTitle.parentNode).$("ul.box-list").removeCss("hidden");
+	});
+	NTES("div.pnav-box div.box-title a.btn-unfold").addEvent("click", function(e){
+		e.preventDefault();
+		var eleTitle = NTES(this.parentNode);
+		NTES(this).addCss("hidden");
+		eleTitle.$("a.btn-fold").removeCss("hidden");
+		NTES(eleTitle.parentNode).$("ul.box-list").addCss("hidden");
+	});
+	NTES("div.pnav-box ul.box-list a.btn-fold").addEvent("click", function(e){
+		e.preventDefault();
+		var eleTitle = NTES(this.parentNode);
+		NTES(this).addCss("hidden");
+		eleTitle.$("a.btn-unfold").removeCss("hidden");
+		eleTitle.$("h2").removeCss("hidden");
+	});
+	NTES("div.pnav-box ul.box-list a.btn-unfold").addEvent("click", function(e){
+		e.preventDefault();
+		var eleTitle = NTES(this.parentNode);
+		NTES(this).addCss("hidden");
+		eleTitle.$("a.btn-fold").removeCss("hidden");
+		eleTitle.$("h2").addCss("hidden");
+	});
+	new NTES.ui.Slide(NTES("ul.photo-snav li"), NTES("div.photo-scnt"), "active", "mouseover", 6000);
+})();
+//]]> 
+</SCRIPT>
+
+
+                </div>
+            </td>
+            <td>
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                &nbsp;
+            </td>
+            <td class="style1">
+                &nbsp;
+            </td>
+            <td class="style1">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+    </table>
+
+</BODY>
+</HTML>
